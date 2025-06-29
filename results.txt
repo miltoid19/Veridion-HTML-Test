@@ -1,0 +1,89 @@
+HTML DOCUMENT CLUSTERING RESULTS
+==================================================
+Script directory: C:\Users\milti\Desktop\Apps\Veridion
+Base directory: C:\Users\milti\Desktop\Apps\Veridion\clones
+
+
+==================================================
+PROCESSING TIER 1
+==================================================
+
+Results for Tier 1:
+Total documents: 101
+Number of clusters: 9
+Cluster sizes: [67, 20, 7, 2, 1, 1, 1, 1, 1]
+Singleton clusters: 5
+
+Clusters:
+Cluster 1: ['aemails.org.html', 'aerex.eu.html', 'aevesdk3.com.html', 'afro-pari.com.html', 'ahamconsumerconnections.org.html', 'ahbynmkkmnfu.shop.html', 'ai-center.online.html', 'aigner-haag.at.html', 'akashinime.guru.html', 'alessiofalcone.it.html', 'alhasanfoundation.in.html', 'alileime.org.html', 'alimarkets.com.html', 'alimarkets.it.html', 'alinahoivatiimi.com.html', 'alinahoivatiimi.net.html', 'aliper.com.html', 'aliper.it.html', 'alisupermercati.com.html', 'alisupermercato.eu.html', 'almacom-gmbh.eu.html', 'almighty-jezuz.com.html', 'alwin.ltd.uk.html', 'amdac-carmichael.com.html', 'amordevoltarapido.com.br.html', 'amyqnliycusz.shop.html', 'angangintl.com.html', 'annabeodog.xyz.html', 'aotvqsuprqnb.shop.html', 'apco911.com.html', 'apimco.link.html', 'app-go88s.biz.html', 'appleclub.tech.html', 'approvedfast.com.html', 'apps-foundry.com.html', 'arabianchemicalterminals.com.html', 'arbetslivsmuseer.se.html', 'arcadeeurope.com.html', 'argonfinancial.com.html', 'artfay.tv.html', 'arttoy.cc.html', 'asahibeerusa.com.html', 'asd.net.html', 'ashfordcenter.world.html', 'asiafundspace.com.html', 'astroservice.top.html', 'atyourlevel.online.html', 'audreysweets.xyz.html', 'badlandsconcerts.com.html', 'badlandslightfest.com.html', 'championdirect.store.html', 'columbiahouse.ca.html', 'concoursparcscanada.ca.html', 'couplesdash.com.html', 'datewithdice.com.html', 'dudecheck.com.html', 'fmdistilled.com.html', 'globewayimmigration.com.html', 'golf-saint-cyprien.com.html', 'ilovestubbs.com.html', 'membranereactor.com.html', 'nobullheating.com.html', 'rootsbluesbarbecue.com.html', 'sodearif.com.html', 'soultosolesoundspa.com.html', 'templarsnotary.com.html', 'wifipresspad.com.html']
+Cluster 2: ['alphamaterialsinc.com.html', 'americanairless.com.html', 'angelvisiontravel.com.html', 'brakeditorial.com.html', 'citizensagainstsextrafficking.org.html', 'crazyadsclimber.com.html', 'doughansonconstruction.com.html', 'fidexor.com.html', 'grantiah.com.html', 'harotzu.com.html', 'jandptrucking.com.html', 'keepmybooks.pro.html', 'keepmybooks.services.html', 'moneyweedwives.com.html', 'moneyweedwives.show.html', 'nounsbverbn.com.html', 'ordfld.com.html', 'pvcgs.org.html', 'pyramidelectric.us.html', 'rovics.com.html']
+Cluster 3: ['babubasics.co.uk.html', 'babubasics.com.html', 'eonfibre.net.html', 'paddygower.com.html', 'scalingspecialists.com.html', 'stratalaser.com.html', 'thisisthefuckingnews.com.html']
+Cluster 4: ['amcun3.online.html', 'amcun9.online.html']
+Cluster 5: ['aitoka.shop.html']
+Cluster 6: ['amt-avaluos.online.html']
+Cluster 7: ['anzald.com.html']
+Cluster 8: ['authologic.io.html']
+Cluster 9: ['celestialkeepsakes.com.html']
+
+==================================================
+PROCESSING TIER 2
+==================================================
+
+Results for Tier 2:
+Total documents: 22
+Number of clusters: 6
+Cluster sizes: [12, 6, 1, 1, 1, 1]
+Singleton clusters: 4
+
+Clusters:
+Cluster 1: ['acco-semi.com.html', 'bestcontentwritingservice.com.html', 'creplace.com.html', 'djdrinks.co.uk.html', 'engineeredrss.com.html', 'fortunatextiles.es.html', 'healthfly.in.html', 'mariner-energy.com.html', 'mpgsx.com.mx.html', 'nykei.com.html', 'starkwelt.com.html', 'tiptopteak.com.html']
+Cluster 2: ['ads-sedlmair.online.html', 'hanshammer.de.html', 'hhammer.de.html', 'kroha.de.html', 'local-marketing-lab.com.html', 'techcom-gmbh.de.html']
+Cluster 3: ['alessiodecurtis.com.html']
+Cluster 4: ['altenheime-essen.de.html']
+Cluster 5: ['petapilot.com.html']
+Cluster 6: ['shopmeds.us.html']
+
+==================================================
+PROCESSING TIER 3
+==================================================
+
+Results for Tier 3:
+Total documents: 40
+Number of clusters: 7
+Cluster sizes: [20, 14, 2, 1, 1, 1, 1]
+Singleton clusters: 4
+
+Clusters:
+Cluster 1: ['1stmortgages.london.html', 'adeptohomes.com.html', 'belledermaaesthetics.com.html', 'columbiacouncilofneighborhoods.com.html', 'deltadoula.com.html', 'eastbourne.online.html', 'fieldtech.info.html', 'flyerfunnelsuk.com.html', 'frankieswinebar.com.html', 'furniturehutuk.com.html', 'g3rcq.com.html', 'hycareakarui.com.html', 'lagustosavaldebebas.com.html', 'lipolondon.com.html', 'londonviptaxi.com.html', 'okcis.info.html', 'renautautomotive.com.html', 'renewconsultants.com.html', 'sophrologue-paris14.com.html', 'thefoxinnbroadwell.com.html']
+Cluster 2: ['afnanstore.shop.html', 'bersamaetawalin.site.html', 'cameliastore28.my.id.html', 'cosekarang.com.html', 'dhavinastore.com.html', 'dvnbysarah.com.html', 'elitemajesty.com.html', 'etawalinherbalmilk.site.html', 'juraganstore.shop.html', 'masjidrayaalfalah.id.html', 'parascerah.store.html', 'rakarta.com.html', 'susuetawalinkuid.site.html', 'tulangsendietawalin.site.html']
+Cluster 3: ['coade.icu.html', 'imzcr.me.html']
+Cluster 4: ['ampika.com.html']
+Cluster 5: ['dianessidewalkdeli.com.html']
+Cluster 6: ['omerta-inc.com.html']
+Cluster 7: ['proapremium.id.html']
+
+==================================================
+PROCESSING TIER 4
+==================================================
+
+Results for Tier 4:
+Total documents: 30
+Number of clusters: 3
+Cluster sizes: [12, 11, 7]
+Singleton clusters: 0
+
+Clusters:
+Cluster 1: ['1-win-cazinos-club.org.ru.html', '1win-official-site-casinoz.org.ru.html', '1win-sloty.pp.ru.html', '1wincasinoz-vhod.org.ru.html', 'cazinos-official-1win.net.ru.html', 'cazinoz1-win.pp.ru.html', 'fontan-casino.pp.ru.html', 'fontan-mobile.net.ru.html', 'fontan-zercalo.net.ru.html', 'kasinos-1-win.net.ru.html', 'mirror-wulkan-russia.org.ru.html', 'vulcan-24kasinos.pp.ru.html']
+Cluster 2: ['altnloyalty.com.html', 'ascendohio.com.html', 'lmeloyalty.com.html', 'nbesloyalty.com.html', 'novltyclub.com.html', 'shoalsslty.com.html', 'tlflhasit1.com.html', 'tryhrbyloyalty.com.html', 'visittlfl.com.html', 'wowlklnd.com.html', 'zenlfs.com.html']
+Cluster 3: ['assuredrxservices.com.html', 'coronadynamics.com.html', 'ecoled.co.in.html', 'lbgenetics.com.html', 'morriskamlay.com.html', 'rmhaddock.com.html', 'your-pc-guru.com.html']
+
+==================================================
+SUMMARY
+==================================================
+TIER1: 9 clusters from 101 documents
+TIER2: 6 clusters from 22 documents
+TIER3: 7 clusters from 40 documents
+TIER4: 3 clusters from 30 documents
+
+==================================================
+Results saved to both console output and results.txt
