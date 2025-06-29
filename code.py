@@ -1,5 +1,8 @@
-# Just in case the command "pip install beautifulsoup4 scikit-learn numpy lxml " is run before running the code. Claudeai helped a little
+"""
+Just in case the command "pip install beautifulsoup4 scikit-learn numpy lxml " is run before running the code.
+Claudeai helped with the imports since I do no have enoguhe experance to start that fully on my own yet and I hope I could gain that from working with you :) 
 
+"""
 import os
 import json
 import re
@@ -34,11 +37,7 @@ class DocumentFeatures:
     visual_hash: str
 
 class HTMLSimilarityAnalyzer:
-    """
-    Advanced HTML document similarity analyzer that considers multiple dimensions
-    of similarity from a user's perspective in a web browser.
-    """
-    
+    # Advanced HTML document similarity analyzer that considers multiple dimensions of similarity from a user's perspective in a web browser.
     def __init__(self, similarity_threshold=0.3, min_cluster_size=2):
         self.similarity_threshold = similarity_threshold
         self.min_cluster_size = min_cluster_size
@@ -49,7 +48,7 @@ class HTMLSimilarityAnalyzer:
         """Extract comprehensive features from HTML document"""
         soup = BeautifulSoup(html_content, 'html.parser')
         
-        # Remove comments and script/style content for cleaner analysis
+        # Remove comments and script/style content for cleaner analysis caauded made a very good point here they could indeed interfere if they are present... (did not check all the files soo might be none present BUT STILL!)
         for element in soup(["script", "style"]):
             element.decompose()
         for comment in soup.find_all(string=lambda text: isinstance(text, Comment)):
@@ -92,13 +91,13 @@ class HTMLSimilarityAnalyzer:
         return headings
     
     def _extract_clean_text(self, soup: BeautifulSoup) -> str:
-        """Extract clean text content"""
+        # extract clean text content section..
         # Remove navigation, footer, sidebar content that might be boilerplate
         for element in soup.find_all(['nav', 'footer', 'aside']):
             element.decompose()
         
         text = soup.get_text()
-        # Clean up whitespace
+        # Also cleaning up whitespace
         text = re.sub(r'\s+', ' ', text).strip()
         return text
     
@@ -290,7 +289,7 @@ class HTMLSimilarityAnalyzer:
         text_data = []
         for features in features_list:
             combined_text = f"{features.title} {features.meta_description} {features.text_content[:1000]}"
-            # Ensure we have some text content
+            # Ensureing we have some text content
             if not combined_text.strip():
                 combined_text = f"document {features.filename}"
             text_data.append(combined_text)
@@ -600,8 +599,8 @@ class HTMLSimilarityAnalyzer:
         return report
 
 def main():
-    """Main function to process all tier directories"""
-    # Get the directory where code.py is located
+    """Main function to process all tier directories realized kind of mid way threw that I had my local direcotry hard coded in... Yea that is a nono so I made it work based on the direcory of the code and clones folder and file."""
+    # Get the directory where code.py is located idialy next to the Autorun.bat (yes this is a very late comment after commingting and readyng the second pasge of the submition prosses...
     script_dir = Path(__file__).parent
     base_path = script_dir / "clones"
     
@@ -610,69 +609,69 @@ def main():
     
     results = {}
     
-    # Open results.txt file for writing in the same directory as code.py
+    # Open results.txt file for writing in the same directory as code.py found it nicer that reading it on the commadn pormpt
     results_file = script_dir / "results.txt"
     
-    def print_and_write(text, file_handle=None):
+    def PNW(text, file_handle=None): # PNW for print and write best name I could think of at the time
         """Print to console and write to file"""
         print(text)
         if file_handle:
             file_handle.write(text + '\n')
     
     with open(results_file, 'w', encoding='utf-8') as f:
-        print_and_write("HTML DOCUMENT CLUSTERING RESULTS", f)
-        print_and_write("=" * 50, f)
-        print_and_write(f"Script directory: {script_dir}", f)
-        print_and_write(f"Base directory: {base_path}", f)
-        print_and_write("", f)
+        PNW("HTML DOCUMENT CLUSTERING RESULTS", f)
+        PNW("=" * 50, f)
+        PNW(f"Script directory: {script_dir}", f)
+        PNW(f"Base directory: {base_path}", f)
+        PNW("", f)
         
         for tier in range(1, 5):
             tier_path = base_path / f"tier{tier}"
             if tier_path.exists():
                 header = f"PROCESSING TIER {tier}"
-                print_and_write(f"\n{'='*50}", f)
-                print_and_write(header, f)
-                print_and_write('='*50, f)
+                PNW(f"\n{'='*50}", f)
+                PNW(header, f)
+                PNW('='*50, f)
                 
                 try:
                     report = analyzer.analyze_and_report(str(tier_path))
                     results[f"tier{tier}"] = report
                     
                     # Print and write results
-                    print_and_write(f"\nResults for Tier {tier}:", f)
-                    print_and_write(f"Total documents: {report['total_documents']}", f)
-                    print_and_write(f"Number of clusters: {report['num_clusters']}", f)
-                    print_and_write(f"Cluster sizes: {report['cluster_sizes']}", f)
-                    print_and_write(f"Singleton clusters: {report['singleton_clusters']}", f)
+                    PNW(f"\nResults for Tier {tier}:", f)
+                    PNW(f"Total documents: {report['total_documents']}", f)
+                    PNW(f"Number of clusters: {report['num_clusters']}", f)
+                    PNW(f"Cluster sizes: {report['cluster_sizes']}", f)
+                    PNW(f"Singleton clusters: {report['singleton_clusters']}", f)
                     
-                    print_and_write(f"\nClusters:", f)
+                    PNW(f"\nClusters:", f)
                     for i, cluster in enumerate(report['clusters'], 1):
                         cluster_text = f"Cluster {i}: {cluster}"
-                        print_and_write(cluster_text, f)
+                        PNW(cluster_text, f)
                     
                 except Exception as e:
                     error_msg = f"Error processing tier {tier}: {e}"
-                    print_and_write(error_msg, f)
+                    PNW(error_msg, f)
                     results[f"tier{tier}"] = {"error": str(e)}
             else:
                 not_found_msg = f"Tier {tier} directory not found: {tier_path}"
-                print_and_write(not_found_msg, f)
+                PNW(not_found_msg, f)
         
         # Summary section
-        print_and_write(f"\n{'='*50}", f)
-        print_and_write("SUMMARY", f)
-        print_and_write('='*50, f)
+        PNW(f"\n{'='*50}", f)
+        PNW("SUMMARY", f)
+        PNW('='*50, f)
         
         for tier, data in results.items():
             if 'error' not in data:
                 summary_line = f"{tier.upper()}: {data['num_clusters']} clusters from {data['total_documents']} documents"
             else:
                 summary_line = f"{tier.upper()}: Error - {data['error']}"
-            print_and_write(summary_line, f)
+            PNW(summary_line, f)
         
-        print_and_write("", f)
-        print_and_write("=" * 50, f)
-        print_and_write("Results saved to both console output and results.txt", f)
+        PNW("", f)
+        PNW("=" * 50, f)
+        PNW("Results saved to both console output and results.txt", f)
     
     # Save detailed results to JSON in the same directory as code.py
     json_output_file = script_dir / "clustering_results.json"
